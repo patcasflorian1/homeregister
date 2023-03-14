@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+#myHeader {
+  background-color: #400040;
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
+a:hover {
+  background-color: yellow;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#teams {
+  width: 75%;
+  border-collapse: collapse;
+  font-family: sans-serif, Arial;
+  font-size: 75%;
+  box-shadow: 2px 2px 2px #555;
+  overflow-x: scroll;
+}
+thead {
+  color: green;
+}
+tbody {
+  background-color: #cde;
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  border-radius: 20px;
+  padding: 5px;
+}
+tfoot {
+  color: red;
+}
+table,
+th,
+td {
+  background-color: LightGray;
+  border: 2px solid black;
+}
+
+
+
+#myBody {
+  background-color: #2f2727;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#1a82f7), to(#2f2727));
+  background: -webkit-radial-gradient(circle, #1a82f7, #2f2727);
+  background: -moz-radial-gradient(circle, #1a82f7, #2f2727);
+  background: -ms-radial-gradient(circle, #1a82f7, #2f2727);
+}
+#myCaption {
+  background: #245f91;
+  color: #eee;
+  text-align: center;
+  padding: 10px;
+  border-radius: 55px;
+  font-weight: bold;
+}
+
+
+
+
+.footer {
+  color: White;
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  width: 75%;
+}

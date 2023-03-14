@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1" />
+    <title>Insert title here</title>
+
+    <link rel="stylesheet" type="text/css" href="lista-style.css" />
+  </head>
+  <body id="myBody">
+    <h3 id="myHeader">
+      <a href="#home" data-page="home">Home</a>
+      <a style="color: red" href="home.htm" metod="post" commandName="isLogin">DashBoard</a> MicrogamePortal
+      <a style="color: red" href="login-portal.htm">. LogOut</a>
+    </h3>
+    <header >
+      <div id="header-wrapper">
+      <div id="header-info">
+      <ul id="top-menu-bar">
+        <li><a href="#home" data-page="home">Home</a></li>
+        <li><a href="#skills" data-page="skills">Skills</a></li>
+        <li><a href="#projects" data-page="projects">Projects</a></li>
+        <li><a href="#languages" data-page="languages">Languages</a></li>
+      </ul>
+     </div>
+  
+   </div>
+    
+    </header>
+    <div id="projects" class="page" style="display: none">
+      <form id="editForm" action="" method="POST">
+      <table border="1" id="teams" class="center">
+        <caption style="color: Tomato">
+          Lista cu utilizatori1
+        </caption>
+        <caption
+          id="myCaption">
+          Organizator : Microgame srl<br />Oradea Str Muntele Gaina Nr.18,Bihor
+        </caption>
+        <thead>
+          <tr>
+            <th>UserEmail</th>
+            <th>UserPassword</th>
+            <th>Role</th>
+            <th>Statut Name</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td>
+              <input type="text" placeholder="Enter User" name="useremail" id="useremail" required />
+            </td>
+            <td>
+              <input type="text" placeholder="Enter User" name="password" id="password" required />
+            </td>
+            <td>
+              <input list="browsers" placeholder="Enter Role" name="role" id="role" required />
+              <datalist id="browsers">
+                <option value="ADMIN">
+                <option value="USER">
+            </td>
+            <td>
+              <input list="browsers1" placeholder="Enter User Statut" name="statut" id="statut" required />
+              <datalist id="browsers1">
+                <option value="ACTIVE">
+                <option value="FORBIDDEN">
+                
+              </datalist>
+            </td>
+            <td>
+              <button type="submit">💾</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      </form>
+    </div>
+    <div id="skills" class="page" style="display: none">
+      <h2>Home</h2>
+      <p>
+        Buna tuturor! Acesta este CV-ul meu
+      </p>
+    </div>
+    <div id="home" class="page" style="display: none">
+      <p>Login</p>
+    </div>
+    
+
+  </body>
+</html>

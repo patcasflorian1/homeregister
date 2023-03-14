@@ -1,0 +1,32 @@
+{
+  "name": "teams-networking",
+  "version": "1.0.0",
+  "description": "TODO...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear": "npm run clean && rimraf node_modules",
+    "clean": "rimraf dist",
+    "build": "webpack --mode production",
+    "start": "webpack serve --open",
+     "deploy":"npm run build && git add . && commit -m new build && git push"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmatei/teams-networking.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmatei/teams-networking/issues"
+  },
+  "homepage": "https://github.com/nmatei/teams-networking#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
